@@ -1,0 +1,119 @@
+html  {
+  background: red; /* For browsers that do not support gradients */
+  /* For Safari 5.1 to 6.0 */
+  background: -webkit-linear-gradient(-45deg, #120a59, #0a3059);
+  /* For Firefox 3.6 to 15 */
+  background: -moz-linear-gradient(-45deg, #120a59, #0a3059);
+  /* Standard syntax */
+  background: linear-gradient(-45deg, #120a59, #0a3059); 
+  background-repeat: no-repeat;
+}
+
+#superlogo  {
+	position: absolute;
+	display: block;
+	width: 70%;
+	margin: auto;
+    top: 0;
+    left: 10%;
+    right: 0;
+    bottom: 10%;
+}
+
+#cmd, #cmd_line {
+	margin: auto;
+	position: absolute;
+	bottom: 35%;
+	left: 7%;
+}
+
+#cmd_line  {
+	left: 13%;
+	visibility: visible;
+}
+
+.#cmd, #cmd-line, #superlogo  {
+	background-color: black;
+}
+
+.images  { 
+  background-color: black;
+  position: absolute;
+  height: 30%;
+  width: 90%;
+  left: 7%;
+  top: 30%;
+}
+#teksti  {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 57%;
+  text-align: center;
+  font-family:"Roboto";
+  font-size: 300%;
+  color: white;
+	
+}
+
+#page {
+	position:absolute;
+	top: 100%;
+	width: 97%;
+	height: 100%
+}
+
+.content  {
+	width: 60%;
+	margin: auto;
+	border-style: solid;
+	border-width:0px thin;
+	border-color: #161610;
+}
+
+.menu  {
+	text-align: center;
+	
+}
+.menu p  {
+	visibility: hidden;
+}
+#menu li {
+	font-size: 150%;
+	display:inline;
+	border-style: solid;
+	background-color:black;
+	font-family: "Roboto";
+}
+#menu li:hover  {
+	background-color: #000066;
+}
+#menu a {
+	text-decoration: none;
+	color: white;
+}
+p {
+	font-family: "Roboto";
+}
+#artikkeliKuva  {
+	width: 60%;
+    margin-left: auto;
+	margin-right: auto;
+	display: block;
+}
+#projekti {
+	background-color: "darkblue";
+	margin-top: 20%;
+	text-align: center;
+	font-size: large;
+}
+.content img {
+	width: 50%;
+}
+
+  @media all and (-ms-high-contrast:none)
+     {
+     .foo { color: green } /* IE10 */
+     *::-ms-backdrop, .foo { color: red } /* IE11 */
+	 #cmd, #cmd_line { bottom: 10%; }
+     }

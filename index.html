@@ -1,0 +1,57 @@
+ <html>
+	<head>
+		<title>Superpiuha - etusivu</title>
+		    <script src="p5.min.js"></script>
+			<script src="../P5addons/p5.dom.min.js"></script>
+			<script src="../P5addons/p5.sound.min.js"></script>
+			<script src="sketch.js"></script>
+		<!--[if !IE]><!-->
+		<link href="Style.css" rel="stylesheet" type="text/css" />
+		<!--<![endif]-->
+		<!--[if IE]>
+		<link rel="stylesheet" type="text/css" href="Style_ie.css" />
+        <![endif]-->
+		<link href="https://fonts.googleapis.com/css?family=Roboto:100,500,700|Oswald:300,400,700" rel="stylesheet" />
+	</head>
+	<body>
+	    <div class="images">
+			<img src="/Images/bigger-than.png" id="cmd"  />
+			<img src="/Images/line.png" id="cmd_line"  />
+			<img src="/Images/Superpiuha-logo-with-wires.png" id="superlogo" alt="logo" />
+		</div>
+		<p id="teksti"></p>
+		<div id="page">
+		<div class="menu">
+		<ul id="menu">
+		<li><a href="/index.html#page">Etusivu</a></li>
+		<li><a href="/Projektit.html#page">Projektit</a></li>
+		<li><a href="/Tietoja.html#page">Tietoja</a></li>
+		</ul>
+		<p>moi</p>
+		</div>
+		<div class="content">
+		<p>Tervetuloa nettisivuilleni t&aumlnne laitan satunnaisesti jotain random juttuja mit&auml nyt tulee mieleen. </p>
+		<div id="projekti">
+		<p>P&aumliv&aumln projekti:</p>
+		
+		</div>
+		</div>
+		</div>
+	</body>
+	<script>
+	var img = document.getElementById('cmd_line');
+
+var interval = window.setInterval(function() {
+    if(img.style.visibility == 'hidden'){
+        img.style.visibility = 'visible';
+    }else{
+        img.style.visibility = 'hidden';
+    }
+	}, 1000);
+	var message = 0;
+	var cars = ["Moi mit&auml kuuluu", "T&aumllle sivulle pit&aumls varmaan laittaa jotain j&aumlrkev&auml&auml", "En m&auml keksi n&aumlit&auml enemp&auml&auml", "Minecraft viittaukset", "Mikkisofta", "Css3", "Html5", "Arvatkaa kauan t&aumln sivun tekemiseen meni", "T&auml&auml sivu tarvii oikeesti lis&auml&auml interaktiivisuutta"];
+	message = Math.floor((Math.random() * 9));
+	var x = document.getElementById("teksti")
+	x.innerHTML = cars[message];
+	</script>
+ </html>

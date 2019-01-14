@@ -1,0 +1,65 @@
+ <html>
+	<head>
+		<title>Superpiuha - tietoja</title>
+		<!--[if !IE]><!-->
+		<link href="Style.css" rel="stylesheet" type="text/css" />
+		<!--<![endif]-->
+		<!--[if IE]>
+		<link rel="stylesheet" type="text/css" href="Style_ie.css" />
+        <![endif]-->
+		<link href="https://fonts.googleapis.com/css?family=Roboto:100,500,700|Oswald:300,400,700" rel="stylesheet" />
+	</head>
+	<body>
+	    <div class="images">
+			<img src="/Images/bigger-than.png" id="cmd"  />
+			<img src="/Images/line.png" id="cmd_line"  />
+			<img src="/Images/Superpiuha-logo-with-wires.png" id="superlogo" alt="logo" />
+		</div>
+		<p id="teksti"></p>
+		<div id="page">
+		<div class="menu">
+		<ul id="menu">
+		<li><a href="/index.html#page">Etusivu</a></li>
+		<li><a href="/Projektit.html#page">Projektit</a></li>
+		<li><a href="/Tietoja.html#page">Tietoja</a></li>
+		</ul>
+		<p>moi</p>
+		</div>
+		<div class="content">
+		<p>T&aumlm&auml on minun sivuni jonne laitan mit&auml nyt mieleen tulee. Koodailen suurimmaksi osaksi nettisivuja mutta v&aumllill&auml
+		my&oumls pythonilla jotain. <br /> Lempipelini: <a href="https://www.paladins.com">Paladins</a> <br /> Koneeni specsit:</p>
+		<ul>
+		<li>Intel core i5-6600k(ylikellotettu: 4,2ghz)</li>
+		<li>Asus z170 Pro Gaming</li>
+		<li>Seasonic G-650</li>
+		<li>Amd Radeon r9 270</li>
+		<li>Kingston HyperX 120GB SSD</li>
+		<li>Kingston HyperX Savage 8gb 2400mhz</li>
+		<li>Noctua NH-D15</li>
+		<li>Seagate 1000GB Kovalevy</li>
+		<li>Asus DRW-24F1ST DVD asema</li>
+		<li>Antec Three Hundred</li>
+		</ul>
+		<p>
+		Olen my&oumls kinnostunut vanhoista laitteista kuten vanhoista tietokoneista ja -vahvistimista. Minulla on k&aumlyt&oumlss&auml Pioneer SX-400L &auml&aumlnivahvistin.
+		</p>
+		</div>
+		</div>
+	</body>
+	<script>
+	var img = document.getElementById('cmd_line');
+
+var interval = window.setInterval(function() {
+    if(img.style.visibility == 'hidden'){
+        img.style.visibility = 'visible';
+    }else{
+        img.style.visibility = 'hidden';
+    }
+	}, 1000);
+	var message = 0;
+	var cars = ["Moi mit&auml kuuluu", "T&aumllle sivulle pit&aumls varmaan laittaa jotain j&aumlrkev&auml&auml", "En m&auml keksi n&aumlit&auml enemp&auml&auml", "Minecraft viittaukset", "Mikkisofta", "Css3", "Html5", "Arvatkaa kauan t&aumln sivun tekemiseen meni", "T&auml&auml sivu tarvii oikeesti lis&auml&auml interaktiivisuutta"];
+	message = Math.floor((Math.random() * 9));
+	var x = document.getElementById("teksti")
+	x.innerHTML = cars[message];
+	</script>
+ </html>
